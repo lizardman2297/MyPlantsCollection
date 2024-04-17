@@ -1,0 +1,111 @@
+* {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  color: #495277;
+}
+
+a, a:active {
+  text-decoration: none;
+  color: #495277;
+}
+
+nav {
+  float: right;
+  background-color: #202124;
+  width: 85%;
+  height: 50px;
+  z-index: 10;
+  box-shadow: 0px 0px 20px 0px #52c841;
+}
+nav .navContent {
+  height: 100%;
+  padding-left: 20px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+nav .navContent .search input[type=text] {
+  width: 400px;
+  height: 30px;
+  border-radius: 4px;
+  border-style: none;
+  padding: 0 10px 0 10px;
+}
+nav .navContent .search input[type=text]:focus {
+  outline: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #3c2263;
+  color: #3c2263;
+  padding: 0 8px 0 8px;
+}
+nav .navContent .account {
+  text-align: right;
+  margin-right: 15px;
+}
+
+aside {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+aside .navbar {
+  float: left;
+  width: calc(15% - 20px);
+  height: calc(100vh - 40px);
+  background-color: #202124;
+  padding: 20px 10px;
+  color: #202124;
+  overflow-x: scroll;
+  z-index: 100;
+}
+aside .navbar .title {
+  padding-bottom: 30px;
+}
+aside .navbar .title img {
+  width: -moz-available;
+  max-width: 172px;
+}
+aside .navbar .parent {
+  font-family: hind-regular;
+  font-weight: bold;
+  border-style: solid;
+  border-color: white;
+  border-width: 0 0 1px 0;
+  margin-bottom: 20px;
+  border-radius: 10px 0;
+}
+aside .navbar .parent .arrow {
+  float: right;
+  margin-right: 15px;
+}
+aside .navbar .childGroup {
+  display: none;
+  font-family: hind-regular;
+  margin-left: 3px;
+  margin-top: -10px;
+  padding-bottom: 15px;
+}
+
+section {
+  padding: 4% 0 0 16%;
+  color: #817592;
+}
+section .plantsBox {
+  width: 250px;
+  height: 250px;
+  background: red;
+  padding: 10px;
+  box-sizing: border-box;
+}
+section #addPlantForm {
+  display: inline-grid;
+}
+section #addPlantForm input, section #addPlantForm select {
+  margin: 10px 0;
+}
+
+/*# sourceMappingURL=main.css.map */
